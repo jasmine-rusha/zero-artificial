@@ -1,0 +1,126 @@
+.verify-wrapper {
+  min-height: 100vh;
+  background: #f0fdf4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px; /* ⬆️ */
+}
+.verify-card {
+  width: 100%;
+  max-width: 500px;            
+  background: white;
+  border-radius: 40px;           
+  padding: 56px 36px;            
+  text-align: center;
+  box-shadow: 0 32px 64px rgba(22, 163, 74, 0.3);
+}
+.verify-logo {
+  width: 80px;                 
+  height: 80px;
+  border-radius: 24px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 32px;
+  font-size: 36px;
+}
+.verify-card h1 {
+  font-size: 28px;               
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #064e3b;
+  font-family: "Poppins", sans-serif;
+}
+.subtitle {
+  font-size: 17px;               
+  color: #6b7280;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.subtitle span {
+  color: #15803d;
+  font-weight: 600;
+  word-break: break-all;
+}
+.otp-group {
+  display: flex;
+  justify-content: center;
+  gap: 18px;                     
+  margin-bottom: 40px;
+}
+
+.otp-group input {
+  width: 88px;                   
+  height: 88px;
+  border-radius: 20px;
+  border: 2px solid #e5e7eb;
+  font-size: 30px;               
+  font-weight: 600;
+  text-align: center;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.otp-group input:focus {
+  border-color: #16a34a;
+  background: #dcfce7;
+}
+.verify-btn {
+  width: 100%;
+  padding: 20px;                 
+  border-radius: 9999px;
+  background: #16a34a;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;              
+  border: none;
+  margin-bottom: 28px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.verify-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.resend {
+  font-size: 16px;              
+  color: #6b7280;
+  margin-bottom: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.resend span {
+  color: #15803d;
+  font-weight: 600;
+  cursor: pointer;
+}
+.back-link {
+  font-size: 17px;               
+  color: #15803d;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+.error-text {
+  color: #dc2626;
+  font-size: 16px;               
+  margin-bottom: 18px;
+}
+@media (max-width: 480px) {
+  .verify-card {
+    padding: 40px 24px;
+    border-radius: 28px;
+  }
+  .otp-group input {
+    width: 64px;
+    height: 64px;
+    font-size: 22px;
+  }
+}
